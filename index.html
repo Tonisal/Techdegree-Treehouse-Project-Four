@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Photo Gallery</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/magnific-popup.css">
+		<link rel="stylesheet" href="assets/style.css">
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<div class="content-wrapper">
+				<div class="gallery">
+					<a href="photos/01.jpg"><img src="photos/thumbnails/01.jpg" title="test"></a>
+					<a href="photos/02.jpg"><img src="photos/thumbnails/02.jpg"></a>
+					<a href="photos/03.jpg"><img src="photos/thumbnails/03.jpg"></a>
+					<a href="photos/04.jpg"><img src="photos/thumbnails/04.jpg"></a>
+					<a href="photos/05.jpg"><img src="photos/thumbnails/05.jpg"></a>
+					<a href="photos/06.jpg"><img src="photos/thumbnails/06.jpg"></a>
+					<a href="photos/07.jpg"><img src="photos/thumbnails/07.jpg"></a>
+					<a href="photos/08.jpg"><img src="photos/thumbnails/08.jpg"></a>
+					<a href="photos/09.jpg"><img src="photos/thumbnails/09.jpg"></a>
+
+				</div>
+			</div>
+		</div>
+		<script src="assets/jquery_v3.3.1.min.js"></script>
+		<script src="assets/jquery.magnific-popup.min.js"></script>
+		<script>
+			$('.gallery').magnificPopup({
+  				delegate: 'a', // child items selector, by clicking on it popup will open
+ 				type: 'image',
+ 				gallery: {
+    					enabled: true
+  				},
+  				image: {
+    				titleSrc: function(item) {
+                        return item.el.attr('title')
+                    }
+  				}
+			});
+
+		</script>
+	</body>
+</html>
