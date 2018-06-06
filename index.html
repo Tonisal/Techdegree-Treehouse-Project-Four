@@ -1,46 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN">
 	<head>
 		<title>My Photo Gallery</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="assets/magnific-popup.css">
-		<link rel="stylesheet" href="assets/style.css">
-		<link rel="stylesheet" href="assets/normalize.css">
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/normalize.css">
 	</head>
 	<body>
 		<div class="page-wrapper">
 			<div class="content-wrapper">
-				<input class="input-search" placeholder="search for photos!" type="text">
-				<div class="gallery">
-					<a href="photos/01.jpg"><img src="photos/thumbnails/01.jpg" title="test"></a>
-					<a href="photos/02.jpg"><img src="photos/thumbnails/02.jpg"></a>
-					<a href="photos/03.jpg"><img src="photos/thumbnails/03.jpg"></a>
-					<a href="photos/04.jpg"><img src="photos/thumbnails/04.jpg"></a>
-					<a href="photos/05.jpg"><img src="photos/thumbnails/05.jpg"></a>
-					<a href="photos/06.jpg"><img src="photos/thumbnails/06.jpg"></a>
-					<a href="photos/07.jpg"><img src="photos/thumbnails/07.jpg"></a>
-					<a href="photos/08.jpg"><img src="photos/thumbnails/08.jpg"></a>
-					<a href="photos/09.jpg"><img src="photos/thumbnails/09.jpg"></a>
-
+				<input type="text" name="filtr-search" class="filtr-search input-search" value="" placeholder="Your search" data-search="">
+				<ul class="filter">
+				   <li class="filtr-button filtr" data-filter="all"> All items</li>
+				   <li data-filter="1"> Category 1</li>
+				   <li data-filter="2"> Category 2</li>
+				   <li data-filter="3"> Category 3</li>
+				   <!-- For a shuffle control add -->
+				   <li data-shuffle> Shuffle items</li>
+				   <!-- For sorting controls add -->
+				</ul>
+				<div class="gallery filtr-container">
+					<a class="filtr-item" data-category="1" data-sort="I love hay bales. Took this snap on a drive through the countryside past some straw fields." href="photos/01.jpg">
+						<img src="photos/thumbnails/01.jpg" >
+					</a>
+					<a class="filtr-item" data-category="2" data-sort="The lake was so calm today. We had a great view of the snow on the mountains from here." href="photos/02.jpg">
+						<img src="photos/thumbnails/02.jpg">
+					</a>
+					<a class="filtr-item" data-category="3" data-sort="I hiked to the top of the mountain and got this picture of the canyon and trees below." href="photos/03.jpg">
+						<img src="photos/thumbnails/03.jpg">
+					</a>
+					<a class="filtr-item" data-category="1" data-sort="It was amazing to see an iceberg up close, it was so cold but didn’t snow today." href="photos/04.jpg">
+						<img src="photos/thumbnails/04.jpg">
+					</a>
+					<!--<a class="filtr-item" data-category="2" href="photos/05.jpg"><img src="photos/thumbnails/05.jpg"></a>
+					<a class="filtr-item" data-category="2" href="photos/06.jpg"><img src="photos/thumbnails/06.jpg"></a>
+					<a class="filtr-item" data-category="3" href="photos/07.jpg"><img src="photos/thumbnails/07.jpg"></a>
+					<a class="filtr-item" data-category="3" href="photos/08.jpg"><img src="photos/thumbnails/08.jpg"></a>
+					<a class="filtr-item" data-category="3" href="photos/09.jpg"><img src="photos/thumbnails/09.jpg"></a>-->
 				</div>
 			</div>
 		</div>
-		<script src="assets/jquery_v3.3.1.min.js"></script>
-		<script src="assets/jquery.magnific-popup.min.js"></script>
-		<script>
-			$('.gallery').magnificPopup({
-  				delegate: 'a', // child items selector, by clicking on it popup will open
- 				type: 'image',
- 				gallery: {
-    					enabled: true
-  				},
-  				image: {
-    				titleSrc: function(item) {
-                        return item.el.attr('title')
-                    }
-  				}
-			});
-
-		</script>
+		<script src="assets/js/jquery_v3.3.1.min.js"></script>
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="assets/js/jquery.filterizr.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
 	</body>
 </html>
