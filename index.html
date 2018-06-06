@@ -1,49 +1,93 @@
 <!DOCTYPE html>
 <html lang="EN">
-	<head>
-		<title>My Photo Gallery</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="assets/css/magnific-popup.css">
-		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" href="assets/css/normalize.css">
-	</head>
-	<body>
-		<div class="page-wrapper">
-			<div class="content-wrapper">
-				<input type="text" name="filtr-search" class="filtr-search input-search" value="" placeholder="Your search" data-search="">
-				<ul class="filter">
-				   <li class="filtr-button filtr" data-filter="all"> All items</li>
-				   <li data-filter="1"> Category 1</li>
-				   <li data-filter="2"> Category 2</li>
-				   <li data-filter="3"> Category 3</li>
-				   <!-- For a shuffle control add -->
-				   <li data-shuffle> Shuffle items</li>
-				   <!-- For sorting controls add -->
-				</ul>
-				<div class="gallery filtr-container">
-					<a class="filtr-item" data-category="1" data-sort="I love hay bales. Took this snap on a drive through the countryside past some straw fields." href="photos/01.jpg">
-						<img src="photos/thumbnails/01.jpg" >
-					</a>
-					<a class="filtr-item" data-category="2" data-sort="The lake was so calm today. We had a great view of the snow on the mountains from here." href="photos/02.jpg">
-						<img src="photos/thumbnails/02.jpg">
-					</a>
-					<a class="filtr-item" data-category="3" data-sort="I hiked to the top of the mountain and got this picture of the canyon and trees below." href="photos/03.jpg">
-						<img src="photos/thumbnails/03.jpg">
-					</a>
-					<a class="filtr-item" data-category="1" data-sort="It was amazing to see an iceberg up close, it was so cold but didn’t snow today." href="photos/04.jpg">
-						<img src="photos/thumbnails/04.jpg">
-					</a>
-					<!--<a class="filtr-item" data-category="2" href="photos/05.jpg"><img src="photos/thumbnails/05.jpg"></a>
-					<a class="filtr-item" data-category="2" href="photos/06.jpg"><img src="photos/thumbnails/06.jpg"></a>
-					<a class="filtr-item" data-category="3" href="photos/07.jpg"><img src="photos/thumbnails/07.jpg"></a>
-					<a class="filtr-item" data-category="3" href="photos/08.jpg"><img src="photos/thumbnails/08.jpg"></a>
-					<a class="filtr-item" data-category="3" href="photos/09.jpg"><img src="photos/thumbnails/09.jpg"></a>-->
-				</div>
-			</div>
-		</div>
-		<script src="assets/js/jquery_v3.3.1.min.js"></script>
-		<script src="assets/js/jquery.magnific-popup.min.js"></script>
-		<script src="assets/js/jquery.filterizr.min.js"></script>
-		<script src="assets/js/scripts.js"></script>
-	</body>
+<head>
+    <title>My Photo Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="content-wrapper">
+        <input type="text" name="filtr-search" class="filtr-search input-search" value="" placeholder="Your search"
+               data-search="">
+
+        <div class="gallery filtr-container">
+            <div class="filtr-item" data-category="1">
+                <a href="photos/01.jpg"
+                   title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+                    <img src="photos/thumbnails/01.jpg"
+                         alt="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+                    <span class="item-desc">I love hay bales. Took this snap on a drive through the countryside past some straw fields.</span>
+                </a>
+            </div>
+            <div class="filtr-item" data-category="1">
+                <a href="photos/02.jpg"
+                   title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+                    <img src="photos/thumbnails/02.jpg"
+                         alt="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+                    <span class="item-desc">The lake was so calm today. We had a great view of the snow on the mountains from here.</span>
+                </a>
+            </div>
+            <div class="filtr-item" data-category="1">
+                <a href="photos/03.jpg"
+                   title="BI hiked to the top of the mountain and got this picture of the canyon and trees below.">
+                    <img src="photos/thumbnails/03.jpg"
+                         alt="BI hiked to the top of the mountain and got this picture of the canyon and trees below.">
+                    <span class="item-desc">BI hiked to the top of the mountain and got this picture of the canyon and trees below.</span>
+                </a>
+            </div>
+            <div class="filtr-item" data-category="1">
+                <a href="photos/04.jpg"
+                   title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+                    <img src="photos/thumbnails/04.jpg"
+                         alt="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+                    <span class="item-desc">It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</span>
+                </a>
+            </div>
+            <div class="filtr-item" data-category="1">
+                <a href="photos/05.jpg"
+                   title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+                    <img src="photos/thumbnails/05.jpg"
+                         alt="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+                    <span class="item-desc">The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</span>
+                </a>
+            </div>
+            <div class="filtr-item" data-category="1">
+                <a href="photos/06.jpg"
+                   title="Fall is coming, I love when the leaves on the trees start to change color.">
+                    <img src="photos/thumbnails/06.jpg"
+                         alt="Fall is coming, I love when the leaves on the trees start to change color.">
+                    <span class="item-desc">Fall is coming, I love when the leaves on the trees start to change color.</span>
+                </a>
+            </div>
+            <div class="filtr-item" data-category="1">
+                <a href="photos/07.jpg" title="I drove past this plantation yesterday, everything is so green!">
+                    <img src="photos/thumbnails/07.jpg"
+                         alt="I drove past this plantation yesterday, everything is so green!">
+                    <span class="item-desc">I drove past this plantation yesterday, everything is so green!</span>
+                </a>
+            </div>
+            <div class="filtr-item" data-category="1">
+                <a href="photos/08.jpg" title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+                    <img src="photos/thumbnails/08.jpg"
+                         alt="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+                    <span class="item-desc">My summer vacation to the Oregon Coast. I love the sandy dunes!</span>
+                </a>
+            </div>
+            <div class="filtr-item" data-category="1">
+                <a href="photos/09.jpg" title="We enjoyed a quiet stroll down this countryside lane.">
+                    <img src="photos/thumbnails/09.jpg" alt="We enjoyed a quiet stroll down this countryside lane.">
+                    <span class="item-desc">We enjoyed a quiet stroll down this countryside lane.</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/jquery_v3.3.1.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.filterizr.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
 </html>
